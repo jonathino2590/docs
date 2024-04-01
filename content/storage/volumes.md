@@ -674,6 +674,8 @@ $ docker run --rm -v /foo -v awesome:/bar busybox top
 > If another container binds the volumes with
 > `--volumes-from`, the volume definitions are _copied_ and the
 > anonymous volume also stays after the first container is removed.
+>
+> Anonymous volumes are not automatically deleted if you run the container in the background like the --detach or -d flag does.
 
 ### Remove all volumes
 
